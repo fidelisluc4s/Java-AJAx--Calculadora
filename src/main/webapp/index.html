@@ -22,36 +22,61 @@
                         <label for="">A</label>
                         <input type="text" name="cpValor2">
                         <label for="">
-                            <button name="btn" value="+">
+                            <button name="btn" value="+" type="button">
                                 +
                             </button>
 
-                            <button name="btn" value="-">
+                            <button name="btn" value="-" type="button">
                                 -
                             </button>
                         </label>
                     </div>
             </fieldset>
         </form>
-        <form action="/primeiro" method="POST">
+        <form method="GET">
             <fieldset>
-                <legend>Calculadora</legend>
+                <legend>Calculadora Com Ajax</legend>
                 <div class="form">
                     <div class="row ajax">
-                        <label for="">A</label>
+                        <label for="">Valor 1</label>
                         <input type="number" name="cpValor1">
-                        <label for="">A</label>
+                        <label for="">Valor 2</label>
                         <input type="number" name="cpValor2">
                         <label for="">
-                            <button name="btn" value="+">
+                            <button name="btn" value="+" type="button">
                                 +
                             </button>
 
-                            <button name="btn" value="-">
+                            <button name="btn" value="-" type="button">
                                 -
                             </button>
                         </label>
+                        <h2 style="display: nome"></h2>
                     </div>
+                </div>
+            </fieldset>
+        </form>
+        <form action="/terceiro" method="POST">
+            <fieldset>
+                <legend>Calculadora usando redirect</legend>
+                <div class="form">
+                    <div class="row ajax">
+                        <label for="">Valor 1</label>
+                        <input type="number" name="cpValor1">
+                        <label for="">Valor 2</label>
+                        <input type="number" name="cpValor2">
+                        <label for="">
+                            <button name="btn" value="+" type="button">
+                                +
+                            </button>
+
+                            <button name="btn" value="-" type="button">
+                                -
+                            </button>
+                        </label>
+                        <h2 style="display: nome"></h2>
+                    </div>
+                </div>
             </fieldset>
         </form>
         <div class="bodyContainer"></div>
