@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Web App</title>
-    <link rel="stylesheet" href="css/style.css"></link>
+    <title>Title</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <div class="container">
@@ -12,78 +11,77 @@
         <h1>Calcular</h1>
     </div>
     <div class="body">
-        <form action="/primeiro" method="POST">
+        <form action="/primeiro" METHOD="post" >
             <fieldset>
                 <legend>Calculadora</legend>
-                <div class="form">
+                <div class="form" >
                     <div class="row">
                         <label for="">A</label>
-                        <input type="text" name="cpValor1">
+                        <input type="text" name = "cpValor1">
                         <label for="">A</label>
-                        <input type="text" name="cpValor2">
+                        <input type="text" name = "cpValor2">
                         <label for="">
-                            <button name="btn" value="+" type="button">
+                            <button name = "btn" value = "+" >
                                 +
                             </button>
-
-                            <button name="btn" value="-" type="button">
+                            <button name = "btn" value = "-" >
                                 -
                             </button>
                         </label>
-                    </div>
-            </fieldset>
-        </form>
-        <form method="GET">
-            <fieldset>
-                <legend>Calculadora Com Ajax</legend>
-                <div class="form">
-                    <div class="row ajax">
-                        <label for="">Valor 1</label>
-                        <input type="number" name="cpValor1">
-                        <label for="">Valor 2</label>
-                        <input type="number" name="cpValor2">
-                        <label for="">
-                            <button name="btn" value="+" type="button">
-                                +
-                            </button>
-
-                            <button name="btn" value="-" type="button">
-                                -
-                            </button>
-                        </label>
-                        <h2 style="display: nome"></h2>
                     </div>
                 </div>
             </fieldset>
         </form>
-        <form action="/terceiro" method="POST">
+        <form action="/ajaxsegundo" METHOD="GET" >
             <fieldset>
-                <legend>Calculadora usando redirect</legend>
-                <div class="form">
+                <legend>Calculadora com Ajax</legend>
+                <div class="form" >
                     <div class="row ajax">
                         <label for="">Valor 1</label>
-                        <input type="number" name="cpValor1">
+                        <input type="number" name = "cpValor1">
                         <label for="">Valor 2</label>
-                        <input type="number" name="cpValor2">
+                        <input type="number" name = "cpValor2">
                         <label for="">
-                            <button name="btn" value="+" type="button">
+                            <button name = "btn" value = "+" type="button">
                                 +
                             </button>
-
-                            <button name="btn" value="-" type="button">
+                            <button name = "btn" value = "-" type="button">
                                 -
                             </button>
                         </label>
-                        <h2 style="display: nome"></h2>
+                        <h2 style="display: none"></h2>
                     </div>
                 </div>
             </fieldset>
         </form>
-        <div class="bodyContainer"></div>
+        <form action="/terceiro" METHOD="POST" >
+            <fieldset>
+                <legend>Calculadora Usando Redirect</legend>
+                <div class="form" >
+                    <div class="row">
+                        <label for="">Valor 1</label>
+                        <input type="number" name = "cpValor1">
+                        <label for="">Valor 2</label>
+                        <input type="number" name = "cpValor2">
+                        <label for="">
+                            <button name = "btn" value = "+" >
+                                +
+                            </button>
+                            <button name = "btn" value = "-" >
+                                -
+                            </button>
+                        </label>
+                        <h2 style="display: none"></h2>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
     </div>
-    <div class="footer">
-        <h2>footer</h2>
-    </div>
+
+
 </div>
+<script src="./js/ajax.js"></script>
+</body>
 
-<script src="js/ajax.js"></script>
+
+</html>
