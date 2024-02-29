@@ -45,7 +45,7 @@ public class PrimeiroServlet extends HttpServlet {
                     "        <h1>Calcular</h1>\n" +
                     "    </div>\n" +
                     "    <div class=\"body\">\n" +
-                    "        <h1>O resultado é: </h1>" +
+                    "        <h1>O resultado é: "+c.operacao()+" </h1>" +
                     "        <div class=\"bodyContainer\"></div>\n" +
                     "    </div>\n" +
                     "    <div class=\"footer\">\n" +
