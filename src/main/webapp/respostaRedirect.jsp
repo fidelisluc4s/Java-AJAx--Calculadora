@@ -15,7 +15,6 @@
         <div class="bodyContainer">
             <!-- JSP Java Server Pages -->
             <%
-            // comentário
             String v1 = request.getParameter("valor");
             String nome = request.getParameter("nome");
             %>
