@@ -1,5 +1,6 @@
 package br.edu.vianna.servlet;
 
+import br.edu.vianna.model.Calculadora;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -22,9 +23,17 @@ public class TerceiroServlet extends HttpServlet {
     }
 
     private void resposta(HttpServletRequest req, HttpServletResponse resp) {
+        String v1 = req.getParameter("cpValor1");
+        String v2 = req.getParameter("cpValor2");
+        String btn = req.getParameter("btn");
+
+        Calculadora c = new Calculadora();
+        c.setValor1( Integer.parseInt(v1));
+        c.setValor2( Integer.parseInt(v2));
+        c.setOperador( btn );
 
         try {
-            resp.sendRedirect("respostaRedirect.html");
+            resp.sendRedirect("respostaRedirect.jsp?valor="+c.operacao());
         } catch (IOException e) {
             System.out.println(("Deu Ruim"));
         }

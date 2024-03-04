@@ -12,6 +12,15 @@
         <h1>Calcular</h1>
     </div>
     <div class="body">
+        <div class="bodyContainer">
+            <!-- JSP Java Server Pages -->
+            <%
+            // comentário
+            String nome = "XPTO";
+            %>
+            <h1>A resposta é <% out.print(nome); %></h1>
+        </div>
+        </div>
         <form action="/terceiro" method="POST">
             <fieldset>
                 <legend>Calculadora usando redirect</legend>
