@@ -16,9 +16,10 @@
             <!-- JSP Java Server Pages -->
             <%
             // comentário
-            String nome = "XPTO";
+            String v1 = request.getParameter("valor");
+            String nome = request.getParameter("nome");
             %>
-            <h1>A resposta é <% out.print(nome); %></h1>
+            <h1>Sr. <% out.print(nome); %> a resposta é <% out.print(v1); %></h1>
         </div>
         </div>
 

@@ -33,7 +33,7 @@ public class TerceiroServlet extends HttpServlet {
         c.setOperador( btn );
 
         try {
-            resp.sendRedirect("respostaRedirect.jsp?valor="+c.operacao());
+            resp.sendRedirect("respostaRedirect.jsp?valor="+c.operacao()+"&nome=zezin");
         } catch (IOException e) {
             System.out.println(("Deu Ruim"));
         }
