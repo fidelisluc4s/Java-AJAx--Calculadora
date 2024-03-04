@@ -19,7 +19,7 @@
             String v1 = request.getParameter("valor");
             String nome = request.getParameter("nome");
             %>
-            <h1>Sr. <% out.print(nome); %> a resposta é <% out.print(v1); %></h1>
+            <h1>Sr. <% out.print(nome); %> aa resposta é <% out.print(v1); %></h1>
         </div>
         </div>
 
