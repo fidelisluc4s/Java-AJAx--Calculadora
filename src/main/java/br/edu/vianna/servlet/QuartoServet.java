@@ -33,8 +33,10 @@ public class QuartoServet extends HttpServlet {
             c.setValor2( Integer.parseInt(v2));
             c.setOperador( btn );
 
-            RequestDispatcher rd = req.getRequestDispatcher("respostaForward.jsp?nome="+c.operacao());
+            RequestDispatcher rd = req.getRequestDispatcher("respostaForward.jsp?nome=Zezin");
+            req.setAttribute("calc",c);
             rd.forward(req,resp);
+
         } catch (ServletException e) {
             System.out.println("Deu Ruim");
         } catch (IOException e) {

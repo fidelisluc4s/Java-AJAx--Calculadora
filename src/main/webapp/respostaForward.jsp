@@ -1,5 +1,9 @@
 
 <!DOCTYPE html>
+
+<%@ page import="br.edu.vianna.model.Calculadora" %>
+
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,16 +13,17 @@
 <body>
 <div class="container">
     <div class="header">
-        <h1>Calcular</h1>
+        <h1>Calcular FORWARD</h1>
     </div>
     <div class="body">
         <div class="bodyContainer">
             <!-- JSP Java Server Pages -->
             <%
-
             String nome = request.getParameter("nome");
+            Calculadora calc = (Calculadora)request.getAttribute("calc");
             %>
-            <h1>FORWARD <% out.print(nome); %></h1>
+
+            <h1><% out.print(nome); %> <% out.print(calc.operacao() ); %> </h1>
         </div>
         </div>
 
